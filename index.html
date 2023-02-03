@@ -8,8 +8,32 @@
     <title>Prueba Modal</title>
   </head>
   <body>
+    <section class="section-create"></section>
+    <button id="open-modal">Crear</button>
+       <section class="contain-modal">
+        <div class="modal">
+            
+            <form class="form">
+              <button type="button" id="close-modal">X</button>
+              <div>
+                  <input id="title" type="text" placeholder="Titulo de tarea">
+                  <span id="titleErrors"></span>
+              </div>
+              <div>
+                  <select id="state">
+                      <option value="" disabled selected>Seleccione un estado</option>
+                      <option value="Pendiente">Pendiente</option>
+                      <option value="En progreso">En progreso</option>
+                      <option value="Terminado">Terminado</option>
+                  </select>
+                  <span id="stateErrors"></span>       
+              </div>
+              <button type="submit" class="submit">Crear</button>
+          </form>
+        </div>
+    </section>
     <header>
-      <h1>APP DE TAREAS</h1>
+      <h1>App de tareas</h1>
     </header>
     <main>
       <section class="contain-filters">
